@@ -23,6 +23,18 @@ nav {
     justify-content: center;
 }
 
+#mycv {
+    font-size: 25px;
+    color: white;
+    display: none;
+    padding: 10px;
+}
+
+#mycv a {
+    color: white;
+    text-decoration: none;
+}
+
 nav ul li {
     display: inline-block;
     padding: 15px 20px;

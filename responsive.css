@@ -1,0 +1,89 @@
+@media screen and (max-width: 1062px) {
+    #skills li {
+        padding: 0px;
+    }
+
+    #header {
+        width: 90%;
+    }
+
+    .p-center {
+        width: 90%;
+    }
+
+    .education {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 985px) {
+    .contact-center {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 752px) {
+    nav ul li a{
+        font-size: 14px;
+    }
+
+    .projects {
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+
+    .project1, .project2, .project3{
+        margin: auto;
+        width: 90%;
+    } 
+
+    .code-example {
+        display: block;
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width:692px) {
+    #header {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 656px) {
+    .p-center {
+        width: 100%;
+    }
+
+    nav ul li {
+        display: none;
+    }
+
+    nav ul li a {
+        font-size: 25px;
+    }
+
+    #mycv {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 623px) {
+    #profile-picture {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 573px) {
+    #header {
+        display: block;
+    }
+    #left-row {
+        width: 100%;
+    }
+}
