@@ -15,7 +15,7 @@ body {
 }
 
 nav {
-    background-color: #333;
+    background-color: #444444;
     position: sticky;
     top: 0;
     width: 100%;
@@ -127,7 +127,6 @@ nav ul li a:hover {
 .contact-center {
     display: flex;
     justify-content: center;
-    width: 50%;
     flex-direction: row;
     margin: auto;
 }
@@ -170,9 +169,174 @@ nav ul li a:hover {
     margin: auto;
 }
 
-footer {
+#code-example h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#code-example {
     background-color: #333;
+    width: 100%;
+    color: white;
+    padding: 20px;
+}
+
+.code-example {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: auto;
+}
+
+.task {
+    padding: 15px;
+}
+
+.code-example pre {
+    background-color: #f4f4f4;
+    color: black;
+    padding: 15px;
+    overflow-x: auto;
+}
+
+.code-example pre code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    user-select: text;
+}
+
+#projects {
+    background-color: #333;
+    width: 100%;
+    color: white;
+    padding: 20px;
+}
+
+#projects h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: auto;
+}
+
+.projects a {
+    text-decoration: none;
+    color: white;
+}
+
+.project1 {
+    background-image: url('assets/project1.png');
+    background-size: cover;
+    color: black;
+    padding: 15px;
+    margin: 10px;
+    width: 600px;
+    height: 200px;
+}
+
+.project1:hover {
+    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.8));
+    color: black;
+    cursor: pointer;
+    .content1 {
+        visibility: visible;
+        color: white;
+    }
+}
+
+.project2 {
+    background-image: url('assets/project2.png');
+    background-size: cover;
+    color: black;
+    padding: 15px;
+    margin: 10px;
+    width: 600px;
+    height: 200px;
+}
+
+.project2:hover {
+    background: linear-gradient(to bottom, transparent, rgba(59, 99, 58, 0.8));
+    color: black;
+    cursor: pointer;
+    .content2 {
+        visibility: visible;
+        color: white;
+    }
+}
+
+.project3 {
+    background-image: url('assets/project3.png');
+    background-size: cover;
+    color: black;
+    padding: 15px;
+    margin: 10px;
+    width: 600px;
+    height: 200px;
+}
+
+.project3:hover {
+    background: linear-gradient(to bottom, transparent, rgba(112, 87, 39, 0.8));
+    color: black;
+    cursor: pointer;
+    .content3 {
+        visibility: visible;
+        color: white;
+    }
+}
+
+
+.content3 {
+    visibility: hidden;
+}
+
+.content2 {
+    visibility: hidden;
+}
+
+.content1 {
+    visibility: hidden;
+}
+
+#education h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#education {
+    background-color: #333;
+    width: 100%;
+    color: white;
+    padding: 20px;
+}
+
+.education {
+    margin: auto;
+    width: 50%;
+}
+
+footer {
+    background-color: #444444;
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #afafaf;
+    text-decoration: underline;
+}
+
+footer img {
+    width: 150px;
+    margin-top: 10px;
 }
