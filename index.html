@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Luka Ilashvili</title>
+</head>
+<body>
+    <!-- Main navigation -->
+     <nav aria-label="Main navigation">
+        <ul>
+            <li id="mycv"><a href="#header">My CV</a></li>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#code-example">Code Examples</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+     </nav>
+
+     <!-- Main CV content -->
+      <main>
+        <section id="header">
+            <div id="left-row">
+                <h1>Luka Ilashvili</h1>
+                <h2>Front-end Developer</h2>
+            </div>
+            <aside id="right-row">
+                <img src="assets/profile.jpg" id="profile-picture" alt="Personal picture">
+            </aside>
+        </section>
+        <section id="intro">
+            <h2>Introduction</h2>
+            <div class="p-center">
+                <p>
+                    My name is Luka Ilashvili. I'm 18 years old and I'm a front-end developer.
+                    I am passionate about creating beautiful and functional websites.
+                    I am self taught and I am constantly learning new technologies and improving my skills.
+                    Improving my skills is one of the reasons as to why i joined RS School.
+                    My goal is to master the work flow of developers and to hopefully become employed at the end of this course.
+                </p>
+            </div>
+        </section>
+        
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education">
+                <ul>
+                    <li><strong>RS School - Front end development short stack</strong> - Ongoing</li>
+                    <li><strong>High school diploma</strong> - (2013 - 2025)</li>
+                    <li><strong>Alte university computer science</strong> - (2025 - 2029)</li>
+                    <li><strong>English level</strong> - C1 to C2</li>
+                </ul>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-center">
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>React.js</li>
+                    <li>Vite</li>
+                    <li>Git & GitHub</li>
+                    <li>Responsive Web Design</li>
+                    <li>Cross-Browser Compatibility</li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <div class="contact-center">
+                <p><strong>Email:</strong> lukbusinessg@gmail.com |</p>
+                <p><strong>Phone:</strong> +995 555 11 05 14 |</p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/luka-ilashvili-32884039b/">Luka Ilashvili |</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/LukaIlashvili">LukaIlashvili</a></p>
+                <p><strong>Discord:</strong> lukailashvili_99374</p>
+            </div>
+        </section>
+        
+        <section id="code-example">
+            <h2>Code Example</h2>
+            <div class="code-example">
+                <div class="task">
+                    <p><strong>Task:</strong> Complete the square sum function so that it squares each number passed into it and then sums the results together.</p>
+                    <p>For example, for [1, 2, 2] it should return 9 because 1<sup>2</sup> + 2<sup>2</sup> + 2<sup>2</sup> = 9.</p>
+                </div>
+                <pre><code class="language-javascript">
+function squareSum(numbers){
+  const squaredNums = numbers.map(n => n ** 2)
+  const finalSum = squaredNums.reduce((acc, n) => acc + n, 0)
+  return finalSum
+}
+                </code></pre>
+            </div>
+        </section>
+        
+        <section id="projects">
+            <h2>Notable projects</h2>
+            <div class="projects">
+                <div class="project1">
+                    <a href="https://dashtodo.netlify.app"><div class="content1">
+                    <h3>DashToDo - To Do dashboard</h3>
+                    <p>To do dashboard application with editing and deleting capabilities, local storage support and a task timer. Responsive and a modern, clean design. Made with React.js and styled with CSS3.</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="project2">
+                    <a href="https://choice-adventure-game.netlify.app"><div class="content2">
+                    <h3>Choice adventure game engine</h3>
+                    <p>A choice-based adventure game engine. anyone can make their stories with one dictionary and images.</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="project3">
+                    <a href="https://github.com/LukaIlashvili/FilmBase"><div class="content3">
+                    <h3>FilmBase - Work in progress</h3>
+                    <p>A movie database application that allows users to search for movies and view details about them. Built with React.js and styled with CSS3.</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+      </main>
+
+      <!-- Footer -->
+       <footer>
+            <p>&copy; 2026 Luka Ilashvili. All rights reserved.</p>
+            <a href="https://rs.school/courses/short-track"><p>Front-end development Short stack</p></a>
+            <a href="https://github.com/LukaIlashvili" target="_blank" rel="noopener noreferrer"><p>My Github</p></a>
+            <img src="assets/rs-school-logo.svg" alt="course logo">
+       </footer>
+</body>
+</html>
+
+

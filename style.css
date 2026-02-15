@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #444444;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#mycv {
+    font-size: 25px;
+    color: white;
+    display: none;
+    padding: 10px;
+}
+
+#mycv a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 15px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: .2s all;
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    color: #333;
+    background-color: #f4f4f4;
+    border-radius: 1px;
+}
+
+
+
+#header {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+#left-row {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#left-row h2 {
+    border-bottom: #333 solid;
+}
+
+#right-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile-picture {
+    width: 350px;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+#intro {
+    background-color: #333;
+    width: 100%;
+    color: white;
+    padding: 20px;
+}
+
+#intro h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.p-center {
+    display: flex;
+    justify-self: center;
+    flex-direction: row;
+    width: 50%;
+}
+
+#intro p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#contact {
+    background-color: #333;
+    width: 100%;
+    color: white;
+    padding: 20px;
+}
+
+#contact h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#contact p {
+    margin: 10px 0;
+}
+
+#contact a {
+    color: white;
+}
+
+.contact-center {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: auto;
+}
+
+#skills {
+    background-color: #333;
+    width: 100%;
+    color: white;
+    padding: 20px;
+}
+
+#skills h2 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#skills li {
+    list-style-type: none;
+    border: 1px solid white;
+    background-color: #f4f4f4;
+    color: black;
+    font-weight: bold;
+    width: auto;
+    display: inline;
+    padding: 10px;
+}
+
+#skills li:hover {
+    background-color: #b1b1b1;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+}
+
+.skills-center {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: auto;
+}
+
+#code-example h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#code-example {
+    background-color: #333;
+    width: 100%;
+    color: white;
+    padding: 20px;
+}
+
+.code-example {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: auto;
+}
+
+.task {
+    padding: 15px;
+}
+
+.code-example pre {
+    background-color: #f4f4f4;
+    color: black;
+    padding: 15px;
+    overflow-x: auto;
+}
+
+.code-example pre code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    user-select: text;
+}
+
+#projects {
+    background-color: #333;
+    width: 100%;
+    color: white;
+    padding: 20px;
+}
+
+#projects h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: auto;
+}
+
+.projects a {
+    text-decoration: none;
+    color: white;
+}
+
+.project1 {
+    background-image: url('assets/project1.png');
+    background-size: cover;
+    color: black;
+    padding: 15px;
+    margin: 10px;
+    width: 600px;
+    height: 200px;
+}
+
+.project1:hover {
+    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.8));
+    color: black;
+    cursor: pointer;
+    .content1 {
+        visibility: visible;
+        color: white;
+    }
+}
+
+.project2 {
+    background-image: url('assets/project2.png');
+    background-size: cover;
+    color: black;
+    padding: 15px;
+    margin: 10px;
+    width: 600px;
+    height: 200px;
+}
+
+.project2:hover {
+    background: linear-gradient(to bottom, transparent, rgba(59, 99, 58, 0.8));
+    color: black;
+    cursor: pointer;
+    .content2 {
+        visibility: visible;
+        color: white;
+    }
+}
+
+.project3 {
+    background-image: url('assets/project3.png');
+    background-size: cover;
+    color: black;
+    padding: 15px;
+    margin: 10px;
+    width: 600px;
+    height: 200px;
+}
+
+.project3:hover {
+    background: linear-gradient(to bottom, transparent, rgba(112, 87, 39, 0.8));
+    color: black;
+    cursor: pointer;
+    .content3 {
+        visibility: visible;
+        color: white;
+    }
+}
+
+
+.content3 {
+    visibility: hidden;
+}
+
+.content2 {
+    visibility: hidden;
+}
+
+.content1 {
+    visibility: hidden;
+}
+
+#education h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#education {
+    background-color: #333;
+    width: 100%;
+    color: white;
+    padding: 20px;
+}
+
+.education {
+    margin: auto;
+    width: 50%;
+}
+
+footer {
+    background-color: #444444;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #afafaf;
+    text-decoration: underline;
+}
+
+footer img {
+    width: 150px;
+    margin-top: 10px;
+}
